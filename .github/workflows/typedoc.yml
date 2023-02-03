@@ -10,7 +10,7 @@ jobs:
     name: Publish typedoc
     steps:
     - name: clone repo
-      run: git clone git@github.com:ilia-kebets-sonarsource/gh-pages-debug.git && cd gh-pages-debug
+      run: git clone https://github.com/ilia-kebets-sonarsource/gh-pages-debug.git && cd gh-pages-debug
     - name: Publish typedoc site
       uses: JamesIves/github-pages-deploy-action@v4
       with:
