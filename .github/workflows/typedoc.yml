@@ -1,0 +1,17 @@
+name: 'Typedoc: site for helper function for ESlint-bridge'
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  dogfood_merge:
+    runs-on: ubuntu-latest
+    name: Publish typedoc
+    steps:
+    - name: Publish typedoc site
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        folder: site/
+        target-folder: typedoc/
+        commit-message: "Update ESlint-bridge helper functions site"
