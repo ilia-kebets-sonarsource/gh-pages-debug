@@ -5,7 +5,7 @@ on:
       - main
 
 jobs:
-  dogfood_merge:
+  publish-site:
     runs-on: ubuntu-latest
     name: Publish typedoc
     steps:
