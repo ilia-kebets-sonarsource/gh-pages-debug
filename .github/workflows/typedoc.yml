@@ -2,7 +2,7 @@ name: 'Typedoc: site for helper function for ESlint-bridge'
 on:
   push:
     branches:
-      - main
+      - disabled
 permissions:
   contents: write
 jobs:
